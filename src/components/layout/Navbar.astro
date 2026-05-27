@@ -1,0 +1,42 @@
+---
+import MobileMenu from "./MobileMenu.astro";
+---
+
+<nav class="fixed top-0 w-full z-50">
+
+  <div class="container-custom pt-6">
+
+    <div class="h-16 px-6 rounded-full border border-white/10 bg-black/40 backdrop-blur-xl flex items-center justify-between">
+
+      <a
+        href="/"
+        class="font-bold tracking-[0.5em] text-sm text-zinc-200"
+      >
+        PARANOYZ
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.25em] text-zinc-400">
+
+        <a href="/servicios" class="hover:text-white transition">
+          Servicios
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          Trabajos
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          Nosotros
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          Contacto
+        </a>
+
+      </div>
+  <MobileMenu />
+    </div>
+
+  </div>
+
+</nav>

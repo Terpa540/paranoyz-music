@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/space-grotesk";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f0f10;
+  --surface: #171717;
+  --text: #ffffff;
+  --muted: #bfbfbf;
+  --accent: #c41617;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 lg:px-8;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 9999;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+.section-line {
+  position: relative;
+}
+
+.section-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+::selection {
+  background: rgba(196, 22, 23, 0.3);
+  color: white;
+}

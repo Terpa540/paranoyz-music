@@ -1,0 +1,86 @@
+---
+import FadeIn from "../ui/FadeIn.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+---
+
+<section class="py-24 md:py-32 relative section-line">
+
+  <div class="container-custom">
+
+    <FadeIn>
+
+      <SectionHeading
+        label="El Estudio"
+        title="Un espacio preparado para producciones reales."
+        description="Instalaciones diseñadas para grabación profesional, producción musical, ensayos avanzados y alquiler de espacios para artistas, bandas y productores."
+      />
+
+    </FadeIn>
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <FadeIn delay={150}>
+
+        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-zinc-900">
+
+          <img
+            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1600"
+            alt="Estudio de grabación"
+            class="w-full h-full object-cover"
+          />
+
+        </div>
+
+      </FadeIn>
+
+      <FadeIn delay={300}>
+
+        <div>
+
+          <p class="text-zinc-400 leading-relaxed text-lg mb-8">
+
+            Paranoyz Music dispone de instalaciones adaptadas para proyectos musicales de cualquier escala. Desde sesiones individuales hasta producciones completas con bandas, productores externos y equipos creativos.
+
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+
+            <div class="border border-white/10 p-6 rounded-2xl">
+              <h3 class="font-bold mb-2">Grabación Profesional</h3>
+              <p class="text-zinc-500 text-sm">
+                Vocalistas, músicos y bandas.
+              </p>
+            </div>
+
+            <div class="border border-white/10 p-6 rounded-2xl">
+              <h3 class="font-bold mb-2">Producción Musical</h3>
+              <p class="text-zinc-500 text-sm">
+                Desarrollo artístico y técnico.
+              </p>
+            </div>
+
+            <div class="border border-white/10 p-6 rounded-2xl">
+              <h3 class="font-bold mb-2">Alquiler de Espacios</h3>
+              <p class="text-zinc-500 text-sm">
+                Jornadas completas con o sin técnico.
+              </p>
+            </div>
+
+            <div class="border border-white/10 p-6 rounded-2xl">
+              <h3 class="font-bold mb-2">Producción Audiovisual</h3>
+              <p class="text-zinc-500 text-sm">
+                Servicios mediante colaboradores especializados.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </FadeIn>
+
+    </div>
+
+  </div>
+
+</section>

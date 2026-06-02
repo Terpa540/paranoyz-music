@@ -4,13 +4,135 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout
   title="Contacto | Paranoyz Music"
-  description="Producción musical, grabación y desarrollo audiovisual profesional.">
+  description="Producción musical, grabación profesional, alquiler de instalaciones y desarrollo audiovisual."
+>
 
-  <section class="min-h-screen flex items-center justify-center">
+  <section class="py-32">
 
-    <h1 class="text-5xl font-bold">
-      Servicios
-    </h1>
+    <div class="container-custom">
+
+      <!-- Hero -->
+
+      <div class="max-w-4xl mb-20">
+
+        <p class="uppercase tracking-[0.3em] text-xs text-zinc-500 mb-6">
+          Contacto
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+          Hablemos de tu próximo proyecto.
+        </h1>
+
+        <p class="text-zinc-400 text-lg md:text-xl max-w-3xl leading-relaxed">
+          Producción musical, grabación profesional, alquiler de instalaciones y desarrollo audiovisual para artistas, bandas, productores y sellos.
+        </p>
+
+      </div>
+
+      <!-- Servicios de contacto -->
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+
+        <div class="border border-white/10 rounded-2xl p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Producción Musical
+          </h3>
+
+          <p class="text-zinc-400">
+            Desarrollo creativo y técnico de proyectos musicales.
+          </p>
+        </div>
+
+        <div class="border border-white/10 rounded-2xl p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Grabación
+          </h3>
+
+          <p class="text-zinc-400">
+            Sesiones para vocalistas, músicos y bandas.
+          </p>
+        </div>
+
+        <div class="border border-white/10 rounded-2xl p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Alquiler de Espacios
+          </h3>
+
+          <p class="text-zinc-400">
+            Instalaciones disponibles con o sin técnico.
+          </p>
+        </div>
+
+        <div class="border border-white/10 rounded-2xl p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Audiovisual
+          </h3>
+
+          <p class="text-zinc-400">
+            Producción visual mediante colaboradores especializados.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Formulario -->
+
+      <div class="grid lg:grid-cols-2 gap-12">
+
+        <div>
+
+          <h2 class="text-3xl font-bold mb-6">
+            Cuéntanos qué necesitas.
+          </h2>
+
+          <p class="text-zinc-400 leading-relaxed">
+            Describe tu proyecto y nos pondremos en contacto contigo para valorar las necesidades técnicas, creativas y de producción.
+          </p>
+
+        </div>
+
+        <form class="space-y-6">
+
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+          />
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+          />
+
+          <select
+            class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+          >
+            <option>Producción Musical</option>
+            <option>Grabación</option>
+            <option>Mezcla & Mastering</option>
+            <option>Alquiler de Espacios</option>
+            <option>Audiovisual</option>
+          </select>
+
+          <textarea
+            rows="6"
+            placeholder="Cuéntanos tu proyecto"
+            class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-white text-black px-8 py-4 rounded-full font-medium transition hover:scale-105"
+          >
+            Enviar consulta
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
 
   </section>
 

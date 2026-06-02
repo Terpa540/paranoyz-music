@@ -1,0 +1,106 @@
+---
+import FadeIn from "../ui/FadeIn.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+---
+
+<section class="py-24 md:py-32 relative section-line">
+
+  <div class="container-custom">
+
+    <FadeIn>
+
+      <SectionHeading
+        label="Proceso"
+        title="Una metodología clara para cada proyecto."
+        description="Desde la primera conversación hasta la entrega final, trabajamos cada fase de forma organizada y transparente."
+      />
+
+    </FadeIn>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <FadeIn delay={100}>
+
+        <div class="border border-white/10 p-8 rounded-2xl">
+
+          <span class="text-red-500 font-bold text-sm">
+            01
+          </span>
+
+          <h3 class="text-xl font-bold mt-4 mb-4">
+            Planificación
+          </h3>
+
+          <p class="text-zinc-400">
+            Analizamos objetivos, necesidades técnicas y planteamiento creativo.
+          </p>
+
+        </div>
+
+      </FadeIn>
+
+      <FadeIn delay={200}>
+
+        <div class="border border-white/10 p-8 rounded-2xl">
+
+          <span class="text-red-500 font-bold text-sm">
+            02
+          </span>
+
+          <h3 class="text-xl font-bold mt-4 mb-4">
+            Producción
+          </h3>
+
+          <p class="text-zinc-400">
+            Desarrollo artístico, grabación y trabajo técnico del proyecto.
+          </p>
+
+        </div>
+
+      </FadeIn>
+
+      <FadeIn delay={300}>
+
+        <div class="border border-white/10 p-8 rounded-2xl">
+
+          <span class="text-red-500 font-bold text-sm">
+            03
+          </span>
+
+          <h3 class="text-xl font-bold mt-4 mb-4">
+            Postproducción
+          </h3>
+
+          <p class="text-zinc-400">
+            Mezcla, mastering y optimización final del contenido generado.
+          </p>
+
+        </div>
+
+      </FadeIn>
+
+      <FadeIn delay={400}>
+
+        <div class="border border-white/10 p-8 rounded-2xl">
+
+          <span class="text-red-500 font-bold text-sm">
+            04
+          </span>
+
+          <h3 class="text-xl font-bold mt-4 mb-4">
+            Entrega
+          </h3>
+
+          <p class="text-zinc-400">
+            Material final preparado para publicación, distribución o promoción.
+          </p>
+
+        </div>
+
+      </FadeIn>
+
+    </div>
+
+  </div>
+
+</section>

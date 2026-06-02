@@ -1,20 +1,63 @@
+---
+
+---
+
 <div class="md:hidden">
 
-  <button
-    id="menu-button"
-    class="text-white"
-  >
-    ☰
+<button
+id="menu-button"
+class="text-white text-2xl"
+
+>
+
+```
+☰
+```
+
   </button>
+
+  <div
+    id="mobile-menu"
+    class="hidden fixed top-24 left-4 right-4 bg-black border border-white/10 rounded-3xl p-8 backdrop-blur-xl z-50"
+  >
+
+```
+<nav class="flex flex-col gap-6 uppercase tracking-[0.2em] text-sm">
+
+  <a href="/" class="text-zinc-300 hover:text-white">
+    Inicio
+  </a>
+
+  <a href="/servicios" class="text-zinc-300 hover:text-white">
+    Servicios
+  </a>
+
+  <a href="/trabajos" class="text-zinc-300 hover:text-white">
+    Trabajos
+  </a>
+
+  <a href="/nosotros" class="text-zinc-300 hover:text-white">
+    Nosotros
+  </a>
+
+  <a href="/contacto" class="text-zinc-300 hover:text-white">
+    Contacto
+  </a>
+
+</nav>
+```
+
+  </div>
 
 </div>
 
 <script>
 
   const button = document.getElementById("menu-button");
+  const menu = document.getElementById("mobile-menu");
 
   button?.addEventListener("click", () => {
-    alert("Mobile menu próximamente");
+    menu?.classList.toggle("hidden");
   });
 
 </script>

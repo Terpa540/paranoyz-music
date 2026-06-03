@@ -88,47 +88,160 @@ import MainLayout from "../layouts/MainLayout.astro";
           <p class="text-zinc-400 leading-relaxed">
             Describe tu proyecto y nos pondremos en contacto contigo para valorar las necesidades técnicas, creativas y de producción.
           </p>
+        <div class="mt-10 space-y-4 text-zinc-400">
 
+        <div>
+          <p class="text-white font-medium mb-1">
+            Correo electrónico
+          </p>
+          <p>
+            info@paranoyz.com
+          </p>
         </div>
 
-        <form class="space-y-6">
+        <div>
+          <p class="text-white font-medium mb-1">
+            Ubicación
+          </p>
+          <p>
+            Valencia · España
+          </p>
+        </div>
+
+        <div>
+          <p class="text-white font-medium mb-1">
+            Atención personalizada
+          </p>
+          <p>
+            Analizamos cada proyecto de forma individual para ofrecer la solución técnica y creativa más adecuada.
+          </p>
+        </div>
+
+      </div>
+        </div>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="space-y-6"
+        >
+
+          <input
+            type="hidden"
+            name="access_key"
+            value="81d47752-93f2-4633-b179-af5438479c37"
+          />
+
+          <input
+            type="hidden"
+            name="subject"
+            value="Nueva solicitud desde Paranoyz Music"
+          />
 
           <input
             type="text"
+            name="nombre"
             placeholder="Nombre"
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Email"
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           />
 
-          <select
-            class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
-          >
-            <option>Producción Musical</option>
-            <option>Grabación</option>
-            <option>Mezcla & Mastering</option>
-            <option>Alquiler de Espacios</option>
-            <option>Audiovisual</option>
-          </select>
+         <select
+              name="servicio"
+              class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+            >
+              <option selected disabled>
+                Selecciona un servicio
+              </option>
+              <option>Grabación</option>
+              <option>Mezcla & Mastering</option>
+              <option>Alquiler de Espacios</option>
+              <option>Audiovisual</option>
+              <option>Otros</option>
+            </select>
+
+            <input
+              type="text"
+              name="fecha"
+              placeholder="¿Cuándo te gustaría comenzar el proyecto?"
+              class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
+            />
 
           <textarea
+            name="proyecto"
             rows="6"
-            placeholder="Cuéntanos tu proyecto"
+            placeholder="Explícanos tu proyecto, necesidades, número de canciones, tipo de producción o cualquier información que consideres relevante."
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           ></textarea>
+
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display:none"
+          />
 
           <button
             type="submit"
             class="bg-white text-black px-8 py-4 rounded-full font-medium transition hover:scale-105"
           >
-            Enviar consulta
+            Solicitar información
           </button>
 
         </form>
+        <div class="mt-20 border-t border-white/10 pt-12">
+
+  <h2 class="text-3xl font-bold mb-8">
+    Cómo trabajamos
+  </h2>
+
+  <div class="grid md:grid-cols-4 gap-8">
+
+    <div>
+      <p class="text-white font-semibold mb-3">
+        01
+      </p>
+      <p class="text-zinc-400">
+        Recibimos tu solicitud.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold mb-3">
+        02
+      </p>
+      <p class="text-zinc-400">
+        Analizamos las necesidades del proyecto.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold mb-3">
+        03
+      </p>
+      <p class="text-zinc-400">
+        Proponemos la mejor solución técnica y artística.
+      </p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold mb-3">
+        04
+      </p>
+      <p class="text-zinc-400">
+        Definimos calendario y presupuesto.
+      </p>
+    </div>
+
+  </div>
+
+</div>
 
       </div>
 

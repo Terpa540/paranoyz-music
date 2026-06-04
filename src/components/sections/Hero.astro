@@ -2,7 +2,7 @@
 import FadeIn from "../ui/FadeIn.astro";
 ---
 
-<section class="relative min-h-screen flex items-center overflow-hidden">
+<section class="relative min-h-screen flex items-start md:items-center overflow-hidden">
 
   <!-- Background -->
   <div class="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-black"></div>
@@ -29,7 +29,7 @@ import FadeIn from "../ui/FadeIn.astro";
   <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-red-700/10 rounded-full blur-3xl"></div>
 
   <!-- Content -->
-  <div class="container-custom relative z-10">
+  <div class="container-custom relative z-10 pt-28 md:pt-0">
 
     <FadeIn>
 
@@ -39,7 +39,7 @@ import FadeIn from "../ui/FadeIn.astro";
           Paranoyz Music
         </p>
 
-        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8">
+        <h1 class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8">
           Espacios profesionales para crear, grabar y desarrollar proyectos musicales.
         </h1>
 
@@ -51,14 +51,14 @@ import FadeIn from "../ui/FadeIn.astro";
         <div class="flex flex-wrap gap-4">
 
           <a
-            href="#"
+            href="\instalaciones"
             class="bg-white text-black px-8 py-4 rounded-full font-medium transition duration-300 ease-out hover:scale-105"
           >
             Ver instalaciones
           </a>
 
           <a
-            href="#"
+            href="\contacto"
             class="border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full transition duration-300 ease-out hover:bg-white/10"
           >
             Solicitar información

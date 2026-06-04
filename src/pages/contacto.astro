@@ -24,7 +24,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </h1>
 
         <p class="text-zinc-400 text-lg md:text-xl max-w-3xl leading-relaxed">
-          Producción musical, grabación profesional, alquiler de instalaciones y desarrollo audiovisual para artistas, bandas, productores y sellos.
+          Contacta con nuestro estudio de grabación y producción musical en Valencia para desarrollar proyectos de grabación, mezcla, mastering, alquiler de instalaciones y producción audiovisual.
         </p>
 
       </div>
@@ -86,7 +86,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           </h2>
 
           <p class="text-zinc-400 leading-relaxed">
-            Describe tu proyecto y nos pondremos en contacto contigo para valorar las necesidades técnicas, creativas y de producción.
+            Cuéntanos tu idea, objetivos o necesidades técnicas. Analizaremos el proyecto y te propondremos la solución más adecuada para su desarrollo.
           </p>
         <div class="mt-10 space-y-4 text-zinc-400">
 
@@ -104,7 +104,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             Ubicación
           </p>
           <p>
-            Valencia · España
+            Valencia · Comunidad Valenciana · España
           </p>
         </div>
 
@@ -113,7 +113,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             Atención personalizada
           </p>
           <p>
-            Analizamos cada proyecto de forma individual para ofrecer la solución técnica y creativa más adecuada.
+            Analizamos cada proyecto de forma individual para ofrecer la solución técnica, creativa y presupuestaria más adecuada a cada artista, banda o productor.
           </p>
         </div>
 
@@ -142,6 +142,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             type="text"
             name="nombre"
             placeholder="Nombre"
+            required
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           />
 
@@ -149,16 +150,19 @@ import MainLayout from "../layouts/MainLayout.astro";
             type="email"
             name="email"
             placeholder="Email"
+            required
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           />
 
          <select
               name="servicio"
+              required
               class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
             >
               <option selected disabled>
                 Selecciona un servicio
               </option>
+              <option>Producción Musical</option>
               <option>Grabación</option>
               <option>Mezcla & Mastering</option>
               <option>Alquiler de Espacios</option>
@@ -176,6 +180,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           <textarea
             name="proyecto"
             rows="6"
+            required
             placeholder="Explícanos tu proyecto, necesidades, número de canciones, tipo de producción o cualquier información que consideres relevante."
             class="w-full bg-zinc-900 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-white/30"
           ></textarea>
@@ -195,6 +200,18 @@ import MainLayout from "../layouts/MainLayout.astro";
           </button>
 
         </form>
+        <div class="mt-16 mb-16">
+
+          <h2 class="text-3xl font-bold mb-6">
+            Trabajamos con artistas y proyectos de toda España.
+          </h2>
+
+          <p class="text-zinc-400 leading-relaxed max-w-4xl">
+            Aunque nuestras instalaciones están ubicadas en Valencia, trabajamos con artistas, bandas, productores y proyectos audiovisuales procedentes de toda España. Cada producción se estudia de forma personalizada para adaptar recursos, tiempos y necesidades técnicas a cada proyecto.
+          </p>
+
+        </div>
+
         <div class="mt-20 border-t border-white/10 pt-12">
 
   <h2 class="text-3xl font-bold mb-8">
